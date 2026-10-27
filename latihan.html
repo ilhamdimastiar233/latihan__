@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan JavaScript</title>
+</head>
+<body>
+    <h1>Latihan JavaScript Saya</h1>
+    <p id="hasil">Selamat datang!</p>
+
+    <button onclick="ubahTeks()">Klik Saya</button>
+
+    <h2>Penjumlahan</h2>
+    <p id="jumlah"></p>
+
+    <h2>Perulangan</h2>
+    <p id="angka"></p>
+
+    <script>
+        // Latihan 1: Mengubah teks
+        function ubahTeks() {
+            document.getElementById("hasil").innerHTML =
+                "Saya berhasil belajar JavaScript!";
+        }
+
+        // Latihan 2: Penjumlahan
+        let a = 10;
+        let b = 20;
+        document.getElementById("jumlah").innerHTML =
+            a + " + " + b + " = " + (a + b);
+
+        // Latihan 3: Perulangan
+        let teks = "";
+        for (let i = 1; i <= 10; i++) {
+            teks += i + " ";
+        }
+        document.getElementById("angka").innerHTML = teks;
+    </script>
+</body>
+</html>
